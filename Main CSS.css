@@ -62,13 +62,11 @@ body, html {
 .nav {
     height: 0;
     width: 100%;
-	padding-left: 50%;
     position: fixed;
     z-index:2;
-    left: 0;
-    top: 5%;
     overflow-y: hidden;
     transition: 0.5s;
+	background: teal;
 	text-align: center;
 }
 
@@ -86,63 +84,48 @@ body, html {
     text-decoration: none;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color:red;
-    margin: 6px 0;
-    transition: 0.4s;
-	display: block;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+.closebtn{
+	position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .menubtn{
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
     position: fixed;
     top: 0;
     width: 100%;
-    color: red;
+    color: teal;
     padding: 4px;
     z-index: 1;
+	text-align: center;
 }
 
 .menubtn:hover {
     color:white;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .menutab{
     font:helvetica;
-	border-right-style: solid;
-	border-right-width: thin;
-	border-right-color: black;	
-	display: block;
 	text-align: center;
+	padding-left: 5%;
+	padding-right:5%;
 }
 
 .menutab:hover {
-    border-top-color:darkslategray;
+    border-top-color:white;
     border-top-style:solid;
     border-top-width:thick;
-	border-bottom:darkslategray;
+	border-bottom:white;
     border-bottom-style:solid;
     border-bottom-width:thick;
     transition: 0.3s;
-    background-color: slategray;
+    background-color: black;
+	
 }
 
 img {
