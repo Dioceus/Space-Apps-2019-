@@ -62,22 +62,21 @@ body, html {
 .nav {
     height: 0;
     width: 100%;
+	padding-left: 50%;
     position: fixed;
-    z-index:1;
+    z-index:2;
     left: 0;
-    top: 0;
+    top: 5%;
     overflow-y: hidden;
     transition: 0.5s;
-	padding-top: 25px:
-    
+	text-align: center;
 }
 
 .nav a {
-    padding: 8px 8px 8px 35px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: black;
-    display: block;
     transition: 0.5s;
 }
 
@@ -87,28 +86,41 @@ body, html {
     text-decoration: none;
 }
 
-.nav .closebtn {
-    position: absolute;
-    right: 15px;
-    top: 0;
-    font-size: 36px;
-    margin-left: 50px;
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:red;
+    margin: 6px 0;
+    transition: 0.4s;
+	display: block;
 }
 
-.menu{
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.menubtn{
     font-size: 25px;
     cursor: pointer;
     position: fixed;
     top: 0;
     width: 100%;
     color: red;
-    text-align: center;
     padding: 4px;
-    display:inline-block;
-    z-index: 0;
+    z-index: 1;
 }
 
-.menu:hover {
+.menubtn:hover {
     color:white;
     transition: 0.3s;
 }
@@ -118,8 +130,8 @@ body, html {
 	border-right-style: solid;
 	border-right-width: thin;
 	border-right-color: black;	
-	padding-right: 10px	;
-	display: inline-block;
+	display: block;
+	text-align: center;
 }
 
 .menutab:hover {
@@ -133,11 +145,11 @@ body, html {
     background-color: slategray;
 }
 
-.menutab:active {
+.menutabactive {
 	background-color:teal;
 }
 
-.:hover {
+.menutabactive:hover {
 	border-top-color:darkslategray;
 	border-top-style:solid;
     border-top-width:thick;
