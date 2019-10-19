@@ -1,0 +1,176 @@
+
+
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg1, .bg2, .bg3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        }
+
+.bg1 {
+    background-image: url(Photos/Logo.png);
+    min-height: 575px;
+        }
+
+.bg2{
+    background-image:url(Photos/ToDKeyArt3.jpg);
+    min-height: 250px;
+        }
+        
+.bg3 {
+    background-image: url(Photos/MonsterManualFeatured.jpg);
+    height: 600px;
+    width: 100%;
+        }
+        
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+        
+.contentparallax {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+        
+.contentparallax span.border{
+    color: white;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+        }
+        
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color:#C2CFDC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu{
+    font-size: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    background-color: slategray;
+    padding: 4px;
+    display:inline-block;
+    z-index: 1;
+}
+
+.menu:hover {
+    color:#C2CFDC;
+    transition: 0.3s;
+}
+
+.menutab{
+    font:helvetica;
+}
+
+.menutab:hover {
+    border-left-color:darkslategray;
+    border-left-style:solid;
+    border-left-width:thick;
+    transition: 0.3s;
+    background-color: slategray;
+}
+        
+img {
+    display: block;
+    margin: auto;
+    width:100%;
+    height: 100%;
+    padding: 10px 10px;
+    background-color: beige;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+}
+
+.content {
+    padding: 35px;
+    text-align: center;
+    background-color:white;
+    font-size: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-bottom-color:slategray;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-top-color: slategray;
+    border-top-style: solid;
+    border-top-width: thick;
+}
+
+p {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: helvetica;
+    color: darkslategray;
+        }
+
+    </style>
