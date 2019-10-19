@@ -5,10 +5,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="main stylesheet" href="Main%20CSS.css">
         <title>SPACE TRIVAGO</title>
-			<div class="menubtn" onclick="openMenu(this)">
-  			<div class="bar1"></div>
-  			<div class="bar2"></div>
-  			<div class="bar3"></div>
+		 	<div class="menubtn" onclick="openMenu(this)">
+  				<div class="bar1"></div>
+  				<div class="bar2"></div>
+  				<div class="bar3"></div>
 			</div>
 		
         <div id="mySidenav" class="nav">
@@ -55,18 +55,11 @@
     
     <script>
 		
-		function openMenu(x) {
-			x.classList.toggle("change");
-		}
-		
-		function openNav() {
-    		document.getElementById("mySidenav").style.height = "10%";
-    		document.getElementById("main").style.marginTop = "100%";
-		}
-		
-		function closeNav() {
-    		document.getElementById("mySidenav").style.height = "0";
-    		document.getElementById("main").style.marginTop = "0";
+		function isEven(value) {
+			if (value%2 == 0)
+				return true;
+			else
+				return false;
 		}
 		
     </script>

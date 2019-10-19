@@ -145,18 +145,6 @@ body, html {
     background-color: slategray;
 }
 
-.menutabactive {
-	background-color:teal;
-}
-
-.menutabactive:hover {
-	border-top-color:darkslategray;
-	border-top-style:solid;
-    border-top-width:thick;
-    transition: 0.3s;
-    background-color: teal;
-}
-
 img {
     display: block;
     margin: auto;
