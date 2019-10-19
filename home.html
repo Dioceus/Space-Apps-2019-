@@ -8,32 +8,35 @@
     </head>
 	<body>
         
-        <div class="bg1"></div>
+        <div class="bg1"><img src="b70.png"></div>
         
-        <div id="mySidenav" class="sidenav">
+		<div id="menubtn" class="menu">
+			<a onclick="openNav()">&#9776;</a>
+        </div>
+		
+        <div id="mySidenav" class="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="menutab">
-                <a href="">Home</a>
-            </div>
-            <div class="menutab">
-                <a href="">Character Development</a>
-            </div>
-            <div class="menutab">
-                <a href="">Races</a>
-            </div>
-            <div class="menutab">
-                <a href="">Classes</a>
-            </div>
-            <div class="menutab">
-                <a href="">Combat</a>
-            </div>
-            <div class="menutab">
-                <a href="Environment.html"></a>
-            </div>
-        </div>
-        <div id="menubtn" class="menu">
-        <a onclick="openNav()">&#9776;</a>
-        </div>
+				<div class="menutab">
+                	<a href="">Home</a>
+            	</div>
+            	<div class="menutab">
+                	<a href="">Why</a>
+            	</div>
+            	<div class="menutab">
+                	<a href="">Do</a>
+            	</div>
+            	<div class="menutab">
+                	<a href="">I</a>
+            	</div>
+            	<div class="menutab">
+                	<a href="">Doot</a>
+            	</div>
+            	<div class="menutab">
+                	<a href="">Doot</a>
+            	</div>
+			</div>
+
+        
         <div class="content">
             <p>This website will help you cover the simple basics of the roleplaying tabletop game Dungeon & Dragons.
             <br>
@@ -48,31 +51,35 @@
             AC - Armor class
             </p>
         </div>
-        
-        <div class="bg2">
-            <div class="contentparallax">
-                <span class="border">ABOUT</span>
-            </div>
-        </div>
-        
-    
-        
-        <div class="bg3">
-            <div class="contentparallax">
-                <span class="border">JOIN FOR FANTASTICAL ADVENTURES</span>
-            </div>
-        </div>
-        
     </body>
     
     <script>
+var acc = document.getElementsByClassName("");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.height = "10%";
+    document.getElementById("main").style.marginTop = "100%";
 }
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("mySidenav").style.height = "0";
+    document.getElementById("main").style.marginTop = "0";
 }
     </script>
 </html>
