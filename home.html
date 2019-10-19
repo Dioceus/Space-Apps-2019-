@@ -5,28 +5,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="main stylesheet" href="Main%20CSS.css">
         <title>SPACE TRIVAGO</title>
-		 	<span class="menubtn" onclick="openNav()">&#9776;</span>
+		 	<span class="nav">&#9776;</span>
 		
-        <div id="mySidenav" class="nav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<div class="menutab">
+        	<div class="menu">
                 	<a href="">Home</a>
-            	</div>
-            	<div class="menutab">
-                	<a href="">Why</a>
-            	</div>
-            	<div class="menutab">
-                	<a href="">Do</a>
-            	</div>
-            	<div class="menutab">
+                	<a href="">Locations</a>
+                	<a href="">About</a>
                 	<a href="">I</a>
-            	</div>
-            	<div class="menutab">
                 	<a href="">Doot</a>
-            	</div>
-            	<div class="menutab">
                 	<a href="">Doot</a>
-            	</div>
 			</div>
     </head>
 	<body>
@@ -56,15 +43,20 @@
 	
     <script>
 		
-		function openNav() {
-    		document.getElementById("mySidenav").style.height = "10%";
-    		document.getElementById("main").style.marginTop = "100%";
-		}
-		
-		function closeNav() {
-    		document.getElementById("mySidenav").style.height = "0";
-    		document.getElementById("main").style.marginTop = "0";
-		}
+var coll = document.getElementsByClassName("nav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var menu = this.nextElementSibling;
+    if (menu.style.maxHeight){
+      menu.style.maxHeight = null;
+    } else {
+      menu.style.maxHeight = menu.scrollHeight + "px";
+    } 
+  });
+}
 		
     </script>
 </html>
