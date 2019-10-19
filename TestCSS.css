@@ -1,0 +1,52 @@
+
+
+body{
+
+    background-image:url("BackgroundPictures/Coolpic2.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.DropDownButton
+{
+    background-color:lightskyblue;
+    color:black;
+}
+
+.DropDown
+{
+    position:relative;
+    display:inline-block;
+}
+
+.DropDownContent
+{
+    display:none;
+    position:absolute;
+    background-color:lightblue;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.DropDownContent a
+{
+    color:black;
+    padding: 12px 16px;
+    display:block;
+}
+
+.DropDownContent a:hover 
+{
+    background-color:red;
+}
+
+.DropDown:hover .DropDownContent
+{
+    display:block;
+}
+
+.DropDown:hover .DropButton
+{
+    background-color:#3e8e41;
+}
