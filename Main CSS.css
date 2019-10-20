@@ -21,12 +21,12 @@ body, html {
         }
 
 .bg2{
-    background-image:url(Photos/ToDKeyArt3.jpg);
-    min-height: 250px;
+    background-image:url(b70.png);
+    min-height: 400;
         }
         
 .bg3 {
-    background-image: url(Photos/MonsterManualFeatured.jpg);
+    background-image: url(b70.png);
     height: 600px;
     width: 100%;
         }
@@ -148,15 +148,15 @@ img {
 .content {
     padding: 35px;
     text-align: center;
-    background-color:#3E7485;
+    background-color:black;
     font-size: 16px;
     margin: 0 auto;
     left: 0;
     right: 0;
-    border-bottom-color:slategray;
+    border-bottom-color:white;
     border-bottom-style: solid;
     border-bottom-width: thick;
-    border-top-color: slategray;
+    border-top-color: white;
     border-top-style: solid;
     border-top-width: thick;
 }
@@ -165,7 +165,7 @@ p {
     display: inline-block;
     margin-top: 50px;
     font-family: helvetica;
-    color: darkslategray;
+    color: white;
         }
 
 #back-to-top-btn {
@@ -189,7 +189,7 @@ p {
 }
 
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-  background-color:black;
+  background-color:white;
   color: #3E7485;  
   border-color:#3E7485;
 }
