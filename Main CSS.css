@@ -98,7 +98,6 @@ body, html {
 .login a:hover {
   color:white;
   transition:0.3s;
-  border-bottom: medium white solid;
 }
 
 .menu {
