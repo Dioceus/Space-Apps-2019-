@@ -1,0 +1,236 @@
+
+
+<style>
+
+body, html {
+    height: 100%;
+	margin:0;
+}
+
+.bg1, .bg2, .bg3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        }
+
+.bg1 {
+    background-image: url(home2.jpg);
+    min-height: 700px;
+        }
+
+.bg2{
+    background-image:url(home1.jpg);
+    min-height: 400;
+        }
+        
+.bg3 {
+    background-image: url(b70.png);
+    height: 600px;
+    width: 100%;
+        }
+/*change this later, cuz parallax scrolling is cool to have*/
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+        
+.contentparallax {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+        
+.contentparallax span.border{
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+        }
+        
+.nav {
+  background-color:#3E7485;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  width: 100%;
+  top: 0;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  position: static;
+  z-index: 1;
+  display: inline-block;
+	text-align: center;
+  
+}
+
+.login{
+	z-index: 3;
+	top: 0;
+	right: 0;
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	padding: 1% 1% 1% 1%;
+}
+
+.login a {
+	text-decoration: none;
+	color: white;
+	text-align: right;
+}
+
+.active, .nav:hover {
+  background-color:black;
+  color:#3E7485;
+  transition:0.3s;
+}
+
+.login :hover {
+    border-left: white dotted medium;
+	transition: 0.3s;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+	background-color:#040405;
+	z-index: 2;
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+	position: static;
+}
+
+.menu a{
+	padding: 1% 1% 1% 1%;
+	font: helvetica;
+	text-align: center;	
+	font-size: 25px;
+	text-decoration: none;
+	color: #3E7485;
+	display: inline-block;
+}
+
+.menu a:hover {
+	background: #3E7485;
+	transition: 0.3s;
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+img {
+    display: block;
+    margin: auto;
+    width:100%;
+    height: 100%;
+    padding: 10px 10px;
+    background-color: beige;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+}
+
+.content {
+    padding: 35px;
+    text-align: center;
+    background-color:black;
+    font-size: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-bottom-color:white;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: thick;
+}
+
+p {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: helvetica;
+    color: white;
+        }
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color:#3E7485;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color:white;
+  color: #3E7485;  
+  border-color:#3E7485;
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+    </style>
