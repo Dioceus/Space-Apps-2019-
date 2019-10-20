@@ -62,15 +62,36 @@ body, html {
   width: 100%;
   top: 0;
   border: none;
-  padding-left: 50%;
   outline: none;
   font-size: 25px;
-  position: sticky;
+  position: static;
   z-index: 1;
   display: inline-block;
+	text-align: center;
+  
+}
+
+.login{
+	z-index: 3;
+	top: 0;
+	font-size: 25px;
+	float: right;
+	color: red;
+}
+
+.login a {
+	right: 0;
+	text-decoration: none;
+	color: white;
 }
 
 .active, .nav:hover {
+  background-color:black;
+  color:#3E7485;
+  transition:0.3s;
+}
+
+.login a:hover {
   background-color:black;
   color:#3E7485;
   transition:0.3s;
@@ -85,7 +106,7 @@ body, html {
 	font-size: 25px;
 	width: 100%;
 	text-align: center;
-	position: fixed;
+	position: static;
 }
 
 .menu a{
@@ -127,7 +148,7 @@ img {
 .content {
     padding: 35px;
     text-align: center;
-    background-color:white;
+    background-color:#3E7485;
     font-size: 16px;
     margin: 0 auto;
     left: 0;
@@ -146,5 +167,64 @@ p {
     font-family: helvetica;
     color: darkslategray;
         }
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color:#3E7485;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color:black;
+  color: #3E7485;  
+  border-color:#3E7485;
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
 
     </style>
