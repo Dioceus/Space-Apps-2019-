@@ -30,6 +30,12 @@ class RegisterModal extends Component {
     onChange = (e) => {
         this.setState({[ e.target.name]: e.target.value })
     }
+    
+    onSubmit = (e) => {
+        e.preventDefault()
+        alert("Registration was Successful!")
+
+    }
 
     render(){
         return(
@@ -75,6 +81,11 @@ class RegisterModal extends Component {
                                 </Label>
                             </FormGroup>
                         </Form>
+                        <Button
+                        color = "dark"
+                        style = {{marginBottom: '2rem'}}
+                        onClick = {this.onSubmit}
+                        >Register Now!</Button>
                     </ModalBody>
                 </Modal>
 

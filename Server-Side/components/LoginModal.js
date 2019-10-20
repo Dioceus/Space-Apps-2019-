@@ -29,6 +29,10 @@ class LoginModal extends Component {
     onChange = (e) => {
         this.setState({[ e.target.name]: e.target.value })
     }
+    onSubmit = (e) => {
+        e.preventDefault()
+        alert("Login was Successful!")
+    }
 
     render(){
         return(
@@ -66,6 +70,11 @@ class LoginModal extends Component {
                                 </Label>
                             </FormGroup>
                         </Form>
+                        <Button
+                        color = "dark"
+                        style = {{marginBottom: '2rem'}}
+                        onClick = {this.onSubmit}
+                        >Login Now!</Button>
                     </ModalBody>
                 </Modal>
 

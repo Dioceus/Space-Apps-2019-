@@ -32,6 +32,11 @@ class BookingModal extends Component {
     onChange = (e) => {
         this.setState({[ e.target.name]: e.target.value })
     }
+    onSubmit = (e) => {
+        e.preventDefault()
+        alert("Booking was Successful!")
+
+    }
 
     render(){
         return(
@@ -78,6 +83,11 @@ class BookingModal extends Component {
                                 </Label>
                             </FormGroup>
                         </Form>
+                        <Button
+                        color = "dark"
+                        style = {{marginBottom: '2rem'}}
+                        onClick = {this.onSubmit}
+                        >Book Now!</Button>
                     </ModalBody>
                 </Modal>
 
