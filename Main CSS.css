@@ -16,12 +16,12 @@ body, html {
         }
 
 .bg1 {
-    background-image: url(home1.jpg);
+    background-image: url(home2.jpg);
     min-height: 700px;
         }
 
 .bg2{
-    background-image:url(b70.png);
+    background-image:url(home1.jpg);
     min-height: 400;
         }
         
@@ -75,17 +75,15 @@ body, html {
 	z-index: 3;
 	top: 0;
 	right: 0;
-	display: inline-block;
+	display: block;
 	font-size: 25px;
-	color: red;
 	position: absolute;
 	padding: 1% 1% 1% 1%;
-	font-size: 25px
 }
 
 .login a {
 	text-decoration: none;
-	color: red;
+	color: white;
 	text-align: right;
 }
 
@@ -95,9 +93,11 @@ body, html {
   transition:0.3s;
 }
 
-.login a:hover {
-  color:white;
-  transition:0.3s;
+.login :hover {
+    border-left: white dotted medium;
+	transition: 0.3s;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .menu {
@@ -126,6 +126,9 @@ body, html {
 	background: #3E7485;
 	transition: 0.3s;
 	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
 }
 
 img {
