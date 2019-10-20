@@ -26,7 +26,7 @@ body, html {
         }
         
 .bg3 {
-    background-image: url(b70.png);
+    background-image: url(home2.jpg);
     height: 600px;
     width: 100%;
         }
@@ -61,7 +61,6 @@ body, html {
   padding: 1%;
   width: 100%;
   top: 0;
-  border: none;
   outline: none;
   font-size: 25px;
   position: static;
@@ -81,10 +80,13 @@ body, html {
 	padding: 1% 1% 1% 1%;
 }
 
-.login a {
+.login button {
 	text-decoration: none;
 	color: white;
 	text-align: right;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
 
 .active, .nav:hover {
@@ -93,18 +95,18 @@ body, html {
   transition:0.3s;
 }
 
-.login :hover {
-    border-left: white dotted medium;
+.login button:hover {
+    border-left: white solid 3px;
 	transition: 0.3s;
 	padding-right: 5px;
-	padding-left: 5px;
+	padding-left: 5px;	
 }
 
 .menu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-	background-color:#040405;
+	background-color:black;
 	z-index: 2;
 	font-size: 25px;
 	width: 100%;
@@ -137,7 +139,7 @@ img {
     width:100%;
     height: 100%;
     padding: 10px 10px;
-    background-color: beige;
+    background-color:black;
 }
 
 .footer {
@@ -146,9 +148,48 @@ img {
     right: 0;
     color: white;
     background-color: black;
-    font-size: 12px;
+    font-size: 25px;
     text-align: center;
-    position: fixed;
+    position: relative;
+	padding: 1% 1% 1% 1%;
+}
+
+.footer button {
+	border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+	letter-spacing: 5px;
+}
+
+.footer button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.footer button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.footer button:hover span {
+  padding-right: 25px;
+}
+
+.footer button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .content {
@@ -161,10 +202,10 @@ img {
     right: 0;
     border-bottom-color:white;
     border-bottom-style: solid;
-    border-bottom-width: thick;
+    border-bottom-width: thin;
     border-top-color: white;
     border-top-style: solid;
-    border-top-width: thick;
+    border-top-width: thin;
 }
 
 p {
@@ -233,4 +274,67 @@ p {
   }
 }
 
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: whitesmoke;
+    opacity: 75%;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:#C2CFDC ;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive, .dot:hover {
+  background-color: slategray;
+}
+
+h2 {
+	color: white;
+}
     </style>
