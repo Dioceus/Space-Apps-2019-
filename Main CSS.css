@@ -74,15 +74,19 @@ body, html {
 .login{
 	z-index: 3;
 	top: 0;
+	right: 0;
+	display: inline-block;
 	font-size: 25px;
-	float: right;
 	color: red;
+	position: absolute;
+	padding: 1% 1% 1% 1%;
+	font-size: 25px
 }
 
 .login a {
-	right: 0;
 	text-decoration: none;
-	color: white;
+	color: red;
+	text-align: right;
 }
 
 .active, .nav:hover {
@@ -92,9 +96,9 @@ body, html {
 }
 
 .login a:hover {
-  background-color:black;
-  color:#3E7485;
+  color:white;
   transition:0.3s;
+  border-bottom: medium white solid;
 }
 
 .menu {
