@@ -80,10 +80,13 @@ body, html {
 	padding: 1% 1% 1% 1%;
 }
 
-.login a {
+.login button {
 	text-decoration: none;
 	color: white;
 	text-align: right;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
 
 .active, .nav:hover {
@@ -92,11 +95,11 @@ body, html {
   transition:0.3s;
 }
 
-.login :hover {
-    border-left: white solid thin;
+.login button:hover {
+    border-left: white solid 3px;
 	transition: 0.3s;
 	padding-right: 5px;
-	padding-left: 5px;
+	padding-left: 5px;	
 }
 
 .menu {
